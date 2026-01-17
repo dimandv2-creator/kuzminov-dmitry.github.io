@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Dmitry Kuzminov | Senior IT Engineer</title>
+  <title>Dmitry Kuzminov | IT Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -11,7 +11,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
       background: radial-gradient(1200px 600px at 20% 10%, #0b1b3a, #050b18);
       color: #e5e7eb;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     .container {
@@ -55,35 +55,17 @@
     }
 
     .tagline {
-      margin-top: 16px;
+      margin-top: 18px;
       font-size: 16px;
       color: #cbd5f5;
-      max-width: 720px;
-    }
-
-    h2 {
-      margin-top: 60px;
-      font-size: 26px;
-    }
-
-    .skills {
-      margin-top: 20px;
-    }
-
-    .skills span {
-      display: inline-block;
-      background: rgba(255,255,255,0.08);
-      padding: 8px 14px;
-      border-radius: 999px;
-      margin: 6px 6px 0 0;
-      font-size: 14px;
+      max-width: 760px;
     }
 
     .card {
-      background: rgba(255,255,255,0.04);
-      border-radius: 18px;
-      padding: 28px;
-      margin-top: 24px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 20px;
+      padding: 30px;
+      margin-top: 40px;
     }
 
     .buttons {
@@ -94,23 +76,34 @@
       display: inline-block;
       margin-right: 16px;
       margin-top: 10px;
-      padding: 14px 26px;
-      border-radius: 12px;
+      padding: 14px 28px;
+      border-radius: 14px;
       background: linear-gradient(135deg, #2563eb, #3b82f6);
       color: #fff;
       text-decoration: none;
       font-size: 16px;
       font-weight: 500;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .buttons a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(37,99,235,0.35);
     }
 
     .buttons a.secondary {
-      background: rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.14);
     }
 
     footer {
       margin-top: 80px;
       font-size: 14px;
       color: #9ca3af;
+    }
+
+    a {
+      color: #93c5fd;
+      text-decoration: none;
     }
 
     @media (max-width: 700px) {
@@ -145,46 +138,38 @@
       <img src="fotka.jpg" alt="Дмитрий Кузьминов" class="photo">
       <div>
         <h1>Дмитрий Кузьминов</h1>
-        <div class="subtitle">
-          Senior Engineer / DevOps / SRE
-        </div>
+        <div class="subtitle">IT Engineer</div>
         <div class="tagline">
-          Инженер эксплуатации и DevOps с большим практическим опытом
-          сопровождения и развития критически важных ИТ‑систем
-          в крупнейших финансовых организациях.
+          Инженер IT с большим практическим опытом сопровождения,
+          администрирования и эксплуатации прикладных автоматизированных систем
+          в крупных финансовых организациях. Специализируюсь на обеспечении
+          стабильной работы критически важных сервисов, анализе и устранении
+          инцидентов, внедрении и обновлении программного обеспечения,
+          взаимодействии с разработчиками и бизнес‑подразделениями.
         </div>
       </div>
     </div>
 
-    <h2>Ключевая экспертиза</h2>
-    <div class="skills">
-      <span>Highload · 24×7</span>
-      <span>Kubernetes / OpenShift</span>
-      <span>Monitoring & RCA</span>
-      <span>Incident Management</span>
-      <span>Automation</span>
-      <span>AI‑assisted operations</span>
-    </div>
-
     <div class="card">
-      <b>Сбербанк — Главный инженер</b><br><br>
-      Эксплуатация прикладных автоматизированных систем и микросервисных платформ,
-      обеспечение бесперебойной работы сервисов, мониторинг, инциденты,
-      автоматизация рутинных операций, участие в развитии и сопровождении
-      высоконагруженных систем.
+      <b>Текущая позиция</b><br><br>
+      <b>Сбербанк — Главный инженер</b><br>
+      Сопровождение и администрирование прикладных автоматизированных систем,
+      работа с тестовыми и промышленными ландшафтами, мониторинг и устранение
+      инцидентов, участие в развитии и эксплуатации высоконагруженных ИТ‑сервисов,
+      подготовка эксплуатационной и инструктивной документации.
     </div>
 
     <div class="buttons">
-      <a href="https://disk.yandex.ru/d/thCGsYgh8XTaZA" target="_blank">Сертификаты</a>
-      <a href="#contacts" class="secondary">Контакты</a>
+      <a href="https://disk.yandex.ru/d/UMjZGjdVoCxbYw" target="_blank">Резюме</a>
+      <a href="https://disk.yandex.ru/d/thCGsYgh8XTaZA" target="_blank" class="secondary">Сертификаты</a>
     </div>
 
-    <div id="contacts" class="card">
+    <div class="card">
       <b>Контакты</b><br><br>
-      📧 Email: <a href="mailto:dimandv@ya.ru" style="color:#93c5fd">dimandv@ya.ru</a><br>
+      📧 Email: <a href="mailto:dimandv@ya.ru">dimandv@ya.ru</a><br>
       📱 Телефон / мессенджеры: +7 (903) 540‑35‑54 (Telegram, Max, VK)<br>
-      💬 Telegram: <a href="https://t.me/Sokol_dv" target="_blank" style="color:#93c5fd">@Sokol_dv</a><br>
-      📍 Москва · Remote / Hybrid
+      💬 Telegram: <a href="https://t.me/Sokol_dv" target="_blank">@Sokol_dv</a><br>
+      📍 Москва
     </div>
 
   </div>
@@ -196,50 +181,41 @@
       <img src="fotka.jpg" alt="Dmitry Kuzminov" class="photo">
       <div>
         <h1>Dmitry Kuzminov</h1>
-        <div class="subtitle">
-          Senior Engineer / DevOps / SRE
-        </div>
+        <div class="subtitle">IT Engineer</div>
         <div class="tagline">
-          Senior operations and DevOps engineer with strong hands‑on experience
-          in supporting and evolving mission‑critical IT systems
-          in large financial organizations.
+          IT engineer with strong hands‑on experience in supporting,
+          administering and operating application systems in large
+          financial organizations. Focused on reliability of critical
+          services, incident analysis and resolution, software deployment
+          and close collaboration with development and business teams.
         </div>
       </div>
     </div>
 
-    <h2>Key Expertise</h2>
-    <div class="skills">
-      <span>Highload · 24×7</span>
-      <span>Kubernetes / OpenShift</span>
-      <span>Monitoring & RCA</span>
-      <span>Incident Management</span>
-      <span>Automation</span>
-      <span>AI‑assisted operations</span>
-    </div>
-
     <div class="card">
-      <b>Sberbank — Principal Engineer</b><br><br>
-      Operation and support of application systems and microservice platforms,
-      incident response, monitoring, automation and operational documentation.
+      <b>Current role</b><br><br>
+      <b>Sberbank — Principal Engineer</b><br>
+      Operation and support of application systems, monitoring and incident
+      handling, participation in system evolution and operational documentation.
     </div>
 
     <div class="buttons">
-      <a href="https://disk.yandex.ru/d/thCGsYgh8XTaZA" target="_blank">Certificates</a>
-      <a href="#contacts-en" class="secondary">Contacts</a>
+      <a href="https://disk.yandex.ru/d/UMjZGjdVoCxbYw" target="_blank">Resume</a>
+      <a href="https://disk.yandex.ru/d/thCGsYgh8XTaZA" target="_blank" class="secondary">Certificates</a>
     </div>
 
-    <div id="contacts-en" class="card">
+    <div class="card">
       <b>Contacts</b><br><br>
-      Email: <a href="mailto:dimandv@ya.ru" style="color:#93c5fd">dimandv@ya.ru</a><br>
+      Email: <a href="mailto:dimandv@ya.ru">dimandv@ya.ru</a><br>
       Phone / messengers: +7 (903) 540‑35‑54<br>
-      Telegram: <a href="https://t.me/Sokol_dv" target="_blank" style="color:#93c5fd">@Sokol_dv</a><br>
-      Location: Moscow · Remote / Hybrid
+      Telegram: <a href="https://t.me/Sokol_dv" target="_blank">@Sokol_dv</a><br>
+      Location: Moscow
     </div>
 
   </div>
 
   <footer>
-    © Dmitry Kuzminov · Senior IT Engineer
+    © Dmitry Kuzminov · IT Engineer
   </footer>
 
 </div>
