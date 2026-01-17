@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Dmitry Kuzminov | IT Engineer </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+      margin: 0;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h1 { font-size: 36px; margin-bottom: 10px; }
+    h2 { font-size: 22px; margin-top: 40px; }
+    p { max-width: 760px; }
+    .subtitle { color: #94a3b8; margin-bottom: 30px; }
+    .skills span {
+      display: inline-block;
+      background: #1e293b;
+      padding: 6px 10px;
+      border-radius: 6px;
+      margin: 5px 5px 0 0;
+      font-size: 14px;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 20px 15px 0 0;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      background: #2563eb;
+      color: #fff;
+      font-weight: 500;
+    }
+    .lang {
+      float: right;
+      cursor: pointer;
+      color: #60a5fa;
+      font-size: 14px;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+  </style>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll("[data-lang]").forEach(el => {
+        el.style.display = el.dataset.lang === lang ? "block" : "none";
+      });
+    }
+  </script>
+</head>
+
+<body onload="switchLang('ru')">
+  <div class="container">
+
+    <div class="lang">
+      <span onclick="switchLang('ru')">RU</span> | 
+      <span onclick="switchLang('en')">EN</span>
+    </div>
+
+    <!-- RU -->
+    <div data-lang="ru">
+      <h1>Дмитрий Кузьминов</h1>
+      <div class="subtitle">
+        Senior Engineer / DevOps / SRE<br>
+        Финансовые и платёжные системы · 24×7 · Highload
+      </div>
+
+      <p>
+        Инженер эксплуатации и DevOps с 27+ лет опыта сопровождения
+        критически важных ИТ‑систем в крупнейших финансовых организациях
+        (Сбербанк, ВТБ, SberTech, Альфа‑Банк).
+      </p>
+
+      <h2>Ключевая экспертиза</h2>
+      <div class="skills">
+        <span>Highload / 24×7</span>
+        <span>Kubernetes / OpenShift</span>
+        <span>Monitoring & RCA</span>
+        <span>Incident Management</span>
+        <span>Automation</span>
+        <span>AI‑assisted operations</span>
+      </div>
+
+      <h2>Текущая роль</h2>
+      <p>
+        <b>Сбербанк — Главный инженер</b><br>
+        Эксплуатация прикладных АС, микросервисные платформы,
+        мониторинг, инциденты, автоматизация, эксплуатационная документация.
+      </p>
+
+      <div class="buttons">
+        <a href="ССЫЛКА_НА_ЯНДЕКС_ДОК" target="_blank">Портфолио</a>
+        <a href="ССЫЛКА_НА_PDF_РЕЗЮМЕ" target="_blank">Резюме</a>
+        <a href="mailto:dimandv@ya.ru">Контакты</a>
+      </div>
+    </div>
+
+    <!-- EN -->
+    <div data-lang="en">
+      <h1>Dmitry Dmitriev</h1>
+      <div class="subtitle">
+        Senior Engineer / DevOps / SRE<br>
+        Financial & Payment Systems · 24×7 · Highload
+      </div>
+
+      <p>
+        Senior operations and DevOps engineer with 27+ years of experience
+        supporting mission‑critical IT systems in large financial institutions
+        (Sberbank, VTB, SberTech, Alfa‑Bank).
+      </p>
+
+      <h2>Key Expertise</h2>
+      <div class="skills">
+        <span>Highload / 24×7</span>
+        <span>Kubernetes / OpenShift</span>
+        <span>Monitoring & RCA</span>
+        <span>Incident Management</span>
+        <span>Automation</span>
+        <span>AI‑assisted operations</span>
+      </div>
+
+      <h2>Current Role</h2>
+      <p>
+        <b>Sberbank — Principal Engineer</b><br>
+        Operation of application systems, microservice platforms,
+        monitoring, incident response, automation and documentation.
+      </p>
+
+      <div class="buttons">
+        <a href="ССЫЛКА_НА_ЯНДЕКС_ДОК" target="_blank">Portfolio</a>
+        <a href="ССЫЛКА_НА_PDF_РЕЗЮМЕ" target="_blank">CV</a>
+        <a href="mailto:dimandv@ya.ru">Contacts</a>
+      </div>
+    </div>
+
+    <footer>
+      Moscow · Remote / Hybrid · Telegram: @Sokol_dv
+    </footer>
+
+  </div>
+</body>
+</html>
